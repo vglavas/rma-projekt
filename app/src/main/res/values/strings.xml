@@ -1,0 +1,38 @@
+<resources>
+    <!-- Naziv aplikacije -->
+    <string name="app_name">Parking Finder</string>
+    <!-- Naslov na glavnoj aktivnosti -->
+    <string name="mainTitle">Parkirališta blizu Vas</string>
+    <!-- Tekst dobrodošlice -->
+    <string name="welcome">Dobrodošli!</string>
+    <!-- Tekst za učitavanje i prikaz pogreški prilikom učitavanja -->
+    <string name="loading">Učitavam...</string>
+    <!-- Tekst za gumb Pokušaj ponovno -->
+    <string name="retry">Pokušaj ponovno</string>
+    <!-- Created by -->
+    <string name="copyright">Created by: Vedran Glavaš</string>
+    <!-- Tekst za prikaz greške prilikom učitavanja Google Play usluge -->
+    <string name="servicesError">Došlo je do greške. Ažurirajte Google Play usluge i probajte kasnije.</string>
+    <!-- Tekst u dialogu pri osvježavanju liste parkirališta -->
+    <string name="refreshing">Osvježavam podatke...</string>
+    <!-- MalformedURLException poruka-->
+    <string name="malformedURLException">Server nije u mogućnosti obraditi zahtijev</string>
+    <!-- IOException poruka -->
+    <string name="ioException">Došlo je do greške prilikom preuzimanja podataka. Provjerite je li uključena internet veza.</string>
+    <!-- JSONException poruka -->
+    <string name="jsonException">Došlo je do greške prilikom obrade podataka</string>
+    <!-- NullPointerException poruka -->
+    <string name="nullPointerException">Došlo je do greške</string>
+    <!-- Exception poruka -->
+    <string name="exception">Došlo je do greške</string>
+    <!-- Dialog poruka -->
+    <string name="dialogMessage">Lokacijske usluge isključene</string>
+    <!-- Uključite lokacijske usluge -->
+    <string name="locationsError">Uključite lokacijske usluge</string>
+    <!-- Dialog gumb Postavke -->
+    <string name="settings">Postavke</string>
+    <!-- Dialog gumb Odustani -->
+    <string name="close">Odustani</string>
+    <!--google maps API KEY-->
+    <string name="google_maps_API_KEY">AIzaSyAZRFnhohd-Ky-EfgPgWifP9fXjmu149EE</string>
+</resources>

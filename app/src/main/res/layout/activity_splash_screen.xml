@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Logo aplikacije -->
+    <ImageView
+        android:id="@+id/imLogo"
+        style="@style/logo"/>
+
+    <!-- Tekst dobrodošlice -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        style="@style/welcome"/>
+
+    <!-- Tekst za prikaz pogreški prilikom učitavanja -->
+    <TextView
+        android:id="@+id/tvStatus"
+        style="@style/status"/>
+
+    <!-- Gumb za restartiranje aktivitija -->
+    <Button
+        android:id="@+id/btnRetry"
+        style="@style/retry"/>
+
+    <!-- Created by -->
+    <TextView
+        style="@style/copyright"/>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Layout za prikaz informacija o parkingu -->
+    <LinearLayout
+        android:id="@+id/parkingData"
+        style="@style/ParkingDataWrapper">
+
+        <!-- Adresa parkirališta -->
+        <TextView
+            style="@style/ParkingData"
+            android:hint="Adresa parkirališta"
+            android:id="@+id/tvAddress"/>
+
+        <!-- Približna udaljenost do parkirališta -->
+        <TextView
+            style="@style/ParkingData"
+            android:hint="Udaljenost"
+            android:id="@+id/tvDistance"/>
+    </LinearLayout>
+
+    <!-- Layout za gumb -->
+    <LinearLayout
+        android:id="@+id/showParkingData"
+        style="@style/ShowOnMapWrapper"
+        android:layout_alignTop="@id/parkingData"
+        android:layout_alignBottom="@id/parkingData"
+        android:layout_toRightOf="@id/parkingData"
+        android:layout_toEndOf="@id/parkingData">
+
+        <!-- Gumb za prikaz parkirališta na mapi -->
+        <ImageView
+            android:id="@+id/btnShowOnMap"
+            style="@style/ShowOnMap" />
+    </LinearLayout>
+
+</RelativeLayout>

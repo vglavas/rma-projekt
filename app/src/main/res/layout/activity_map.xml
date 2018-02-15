@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vedran.parkingfinder.MapActivity">
+
+    <!-- Google Map -->
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <!-- Gumb za centriranje pogleda na marker -->
+    <ImageView
+        android:id="@+id/ivCenterMarker"
+        style="@style/CenterMarker" />
+
+    <!-- Gumb za prikaz informacija o parkingu -->
+    <ImageView
+        android:id="@+id/ivShowInfo"
+        style="@style/ShowInfo" />
+
+    <!-- Gumb za prikaz rute do parkirališta -->
+    <ImageView
+        android:id="@+id/ivGetDirections"
+        style="@style/GetDirections" />
+
+</RelativeLayout>

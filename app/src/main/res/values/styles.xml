@@ -1,0 +1,173 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Glavni prozor -->
+    <style name="mainWindow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- Logo aplikacije -->
+    <style name="logo">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">70dp</item>
+        <item name="android:src">@mipmap/ic_launcher</item>
+    </style>
+
+    <!-- Tekst dobrodošlice -->
+    <style name="welcome">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:layout_below">@id/imLogo</item>
+        <item name="android:text">@string/welcome</item>
+    </style>
+
+    <!-- Tekst za prikaz pogreški prilikom učitavanja -->
+    <style name="status">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@id/tvWelcome</item>
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:maxLines">3</item>
+    </style>
+
+    <!-- Gumb za ponovno pokretanje aktivitija -->
+    <style name="retry">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:text">@string/retry</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_below">@id/tvStatus</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- Created by -->
+    <style name="copyright">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:text">@string/copyright</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <!-- Wrapper za prikaz podataka o parkingu -->
+    <style name="ParkingDataWrapper">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!-- Prikaz podataka o parkingu -->
+    <style name="ParkingData">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- Wrapper za gumb za prikaz parkirališta na mapi -->
+    <style name="ShowOnMapWrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- Gumb za prikaz parkirališta na mapi -->
+    <style name="ShowOnMap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:src">@drawable/ic_arrow_right</item>
+    </style>
+
+    <!-- Gumb za centriranje kamere na parkiralište -->
+    <style name="CenterMarker">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@drawable/center_marker_background</item>
+        <item name="android:src">@drawable/ic_center_marker</item>
+    </style>
+
+    <!-- Gumb za prikaz podataka o parkiralištu -->
+    <style name="ShowInfo">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@drawable/center_marker_background</item>
+        <item name="android:layout_below">@id/ivCenterMarker</item>
+        <item name="android:src">@drawable/ic_show_info</item>
+    </style>
+
+    <!-- Naslov -->
+    <style name="MainTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:text">@string/mainTitle</item>
+    </style>
+
+    <!-- Gumb za osvježavanje liste -->
+    <style name="refreshBtn">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:src">@drawable/ic_refresh_list</item>
+    </style>
+
+    <!-- Gumb za prikaz rute do parkinga -->
+    <style name="GetDirections">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@drawable/center_marker_background</item>
+        <item name="android:layout_below">@id/ivShowInfo</item>
+        <item name="android:src">@drawable/ic_get_directions</item>
+    </style>
+
+    <!-- Progress dialog -->
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+</resources>
