@@ -238,24 +238,29 @@ public class MapActivity extends FragmentActivity implements
             ArrayList points = null;
             MarkerOptions markerOptions = new MarkerOptions();
 
-            for(int i = 0; i < results.size(); i++){
-                points = new ArrayList();
-                lineOptions = new PolylineOptions();
-                List<HashMap<String, String>> path = results.get(i);
-                for(int j = 0; j < path.size(); j++){
-                    HashMap<String, String> point = path.get(j);
-                    double lat = Double.parseDouble(point.get("lat"));
-                    double lng = Double.parseDouble(point.get("lng"));
-                    LatLng position = new LatLng(lat, lng);
-                    points.add(position);
+            try{
+                for(int i = 0; i < results.size(); i++){
+                    points = new ArrayList();
+                    lineOptions = new PolylineOptions();
+                    List<HashMap<String, String>> path = results.get(i);
+                    for(int j = 0; j < path.size(); j++){
+                        HashMap<String, String> point = path.get(j);
+                        double lat = Double.parseDouble(point.get("lat"));
+                        double lng = Double.parseDouble(point.get("lng"));
+                        LatLng position = new LatLng(lat, lng);
+                        points.add(position);
+                    }
+                    lineOptions.addAll(points);
+                    lineOptions.width(12);
+                    lineOptions.color(getResources().getColor(R.color.colorPrimary));
+                    lineOptions.geodesic(true);
                 }
-                lineOptions.addAll(points);
-                lineOptions.width(12);
-                lineOptions.color(getResources().getColor(R.color.colorPrimary));
-                lineOptions.geodesic(true);
+                polyline = mMap.addPolyline(lineOptions);
+                hasDirections = true;
+            } catch (Exception e) {
+                e.printStackTrace();
+                Toast.makeText(MapActivity.this, "Došlo je do greške", Toast.LENGTH_LONG).show();
             }
-            polyline = mMap.addPolyline(lineOptions);
-            hasDirections = true;
         }
 
         @Override
