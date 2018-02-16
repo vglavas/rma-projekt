@@ -163,11 +163,31 @@
         <item name="android:src">@drawable/ic_get_directions</item>
     </style>
 
+    <!-- Gumb za postavljanje odredišta -->
+    <style name="SetDestination">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@drawable/center_marker_background</item>
+        <item name="android:src">@drawable/ic_set_destination</item>
+    </style>
+
     <!-- Progress dialog -->
     <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="colorAccent">@color/colorPrimaryDark</item>
         <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
         <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <!-- Alert dialog -->
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
     </style>
 
 </resources>

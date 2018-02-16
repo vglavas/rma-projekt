@@ -30,4 +30,9 @@
         android:id="@+id/ivGetDirections"
         style="@style/GetDirections" />
 
+    <!-- Gumb za postavljanje odredišta -->
+    <ImageView
+        android:id="@+id/ivOdrediste"
+        style="@style/SetDestination" />
+
 </RelativeLayout>

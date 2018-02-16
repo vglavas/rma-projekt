@@ -42,6 +42,9 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait" />
 
+        <service android:name=".GeofenceRegistrationService"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>

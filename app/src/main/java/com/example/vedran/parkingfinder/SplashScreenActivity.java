@@ -69,8 +69,8 @@ public class SplashScreenActivity extends AppCompatActivity implements
     public static Location userLocation;
     public static ArrayList<Parking> myParkings;
     private ParkingAdapter adapter;
-    private FetchData fetchData = new FetchData();
     private TextView tvStatus;
+    private FetchData fetchData = new FetchData();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -208,8 +208,8 @@ public class SplashScreenActivity extends AppCompatActivity implements
             LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, this);
         }
         else {
-            fetchData.execute();
             Log.d(TAG, "onConnected: Got the user location, getting the parking list.");
+            fetchData.execute();
         }
     }
 
