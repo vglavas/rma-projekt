@@ -182,6 +182,13 @@
         <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
         <item name="android:background">@color/colorWhite</item>
     </style>
+    
+    <!-- Alert dialog -->
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
 
     <!-- Alert dialog -->
     <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
