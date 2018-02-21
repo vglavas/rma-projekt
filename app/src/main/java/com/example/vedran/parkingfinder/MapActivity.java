@@ -333,6 +333,7 @@ public class MapActivity extends FragmentActivity implements
     @Override
     public void onConnected(@Nullable Bundle bundle){
         Log.d(TAG, "onConnected: Google API client connected");
+        startLocationMonitor();
     }
 
     @Override
